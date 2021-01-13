@@ -17,8 +17,16 @@
 ## 搭建环境
 
 python 3.6 环境
-- 新建tf-gpu环境  ：conda create -n tf-gpu01 tensorflow-gpu=1.14.0 python=3.6 参照[官网安装教程](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/?highlight=tf-gpu%20)
+- 新建tf-gpu环境  ：
+conda create -n tf-gpu01 tensorflow-gpu=1.14.0 python=3.6
+参照[官网安装教程](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/?highlight=tf-gpu%20)
+
 - pip install -r requirements.txt 安装依赖包
+
+- 安装pytorch 1.0  : 
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+[官网安装教程](https://pytorch.org/get-started/locally/)
+
 
 
 **参照[requirements.txt](https://github.com/lturing/tacotronv2_wavernn_chinese/blob/master/requirements.txt)**安装相应的库      
