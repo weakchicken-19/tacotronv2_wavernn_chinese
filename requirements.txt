@@ -15,5 +15,5 @@ grpc==1.0.0
 hparams==0.3.0
 lws==1.2.6
 scikit_learn==0.23.1
-tensorflow_serving==9.9.0
+#tensorflow_serving==9.9.0
 torch==1.6.0
