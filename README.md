@@ -1,6 +1,9 @@
 # TacotronV2 + WaveRNN
 
 
+       
+
+
 1. 开源中文语音数据集[标贝](https://www.data-baker.com/open_source.html)(女声)训练中文[TacotronV2](https://github.com/Rayhane-mamah/Tacotron-2)，实现中文到声学特征(Mel)转换的声学模型。在GTA模式下，利用训练好的TacotronV2合成标贝语音数据集中中文对应的Mel特征，作为声码器[WaveRNN](https://github.com/fatchord/WaveRNN)的训练数据。在合成阶段，利用TactornV2和WaveRNN合成高质量、高自然度的中文语音。
 2. 从[THCHS-30](http://www.openslr.org/18/)任选一个speaker的语音数据集，微调TacotronV2中的部分参数，实现说话人转换[branch adaptive](https://github.com/lturing/tacotronv2_wavernn_chinese/tree/adaptive)。
 3. Tensorflow serving + Flask 部署TacotronV2中文语音合成服务。   
@@ -11,7 +14,13 @@
 
 **tensorflow-gpu的版本为1.14.0**
 
-## 测试语音合成的效果       
+## 搭建环境
+
+python 3.6 环境
+- 新建tf-gpu环境  ：conda create -n tf-gpu01 tensorflow-gpu=1.14.0 python=3.6 参照[官网安装教程](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/?highlight=tf-gpu%20)
+- pip install -r requirements.txt 安装依赖包
+
+
 **参照[requirements.txt](https://github.com/lturing/tacotronv2_wavernn_chinese/blob/master/requirements.txt)**安装相应的库      
 ```bash
 git clone https://github.com/lturing/tacotronv2_wavernn_chinese.git
